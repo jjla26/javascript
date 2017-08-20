@@ -1,7 +1,7 @@
 # LEVEL 6
 ## Built-In's Bluff
 
-## Level 3 BadgeSTART LEVEL 3
+## Level 6 BadgeSTART LEVEL 6
 ## Code School
 ### Built-In's Bluff
 
