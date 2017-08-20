@@ -1,7 +1,7 @@
-# LEVEL 4
+# LEVEL 7
 ## The Desert of Declarations
 
-## Level 4 BadgeSTART LEVEL 4
+## Level 7 BadgeSTART LEVEL 7
 ## Code School
 
 ### Intro to Functions
