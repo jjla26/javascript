@@ -1,7 +1,7 @@
 # LEVEL 5
 ## Conditional Canyon
 
-## Level 2 BadgeSTART LEVEL 2
+## Level 5 BadgeSTART LEVEL 5
 ## Code School
 ### Loop Slide
 
