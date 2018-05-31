@@ -189,3 +189,62 @@ Leave the moonPhase variable's value as 'full' and the foggyNight variable's val
 5.
 The first if statement's block was executed. That's because moonPhase is 'full', which is true. The || operator only needs one thing to be true in order to return true.
 
+# switch Statements
+Before we move on, let's circle back to else if statements.
+
+Using else if is a great tool for when we have a few different conditions we'd like to consider.
+
+else if is limited however. If we want to write a program with 25 different conditions, like a JavaScript cash register, we'd have to write a lot of code, and it can be difficult to read and understand.
+
+To deal with times when you need many else if conditions, we can turn to a switch statement to write more concise and readable code.
+
+Note: To a computer, a switch statement and an if/else statement are the same, but a switch statement can be easier for other humans to read. Part of being a good developer is writing code that both computers and other humans can read.
+
+switch statements look like this:
+
+var groceryItem = 'papaya';
+
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+The switch keyword initiates the statement, and is followed by ( ... ), which contains the condition that each case will compare to. In the example, the condition is groceryItem.
+Inside the block, { ... }, there are cases. case is like the else if part of an if/else if/else statement. The word following the first case is 'tomato'. If groceryItem equalled 'tomato', that case's console.log would run.
+groceryItem equals 'papaya', so the first and second case statements are skipped. The third case runs since the case is 'papaya' matches groceryItem's value. This particular program will log out: 'Papayas are $1.29'.
+Then the program stops with the break keyword. This keyword will prevent the switch statement from executing any more of its code.
+At the end of each switch statement, there is a default condition. If none of the cases are true, then this code will run.
+Instructions
+1.
+Let's illustrate this by converting our werewolf program to a switch statement. For now, let's also delete the foggyNight variable so it doesn't fog up this concept.
+
+moonPhase will become the condition of the switch statement. Then, each moon phase will become each case that the switch statement checks for.
+
+Start by writing a switch statement with moonPhase as its condition.
+
+2.
+Then, write each else if condition as a case.
+
+If moonPhase is 'full', then use console.log to print 'Howwwwlll!!'.
+
+If moonPhase is 'mostly full', then use console.log to print 'Arms and legs are getting hairier'.
+
+If moonPhase is 'mostly new', then use console.log to print 'Back on two feet'.
+
+Remember to add a break after each console.log, like in the example in the instructions.
+
+3.
+Now, add a default at the end of the switch that uses console.log to print 'Invalid moon phase', in the case that moonPhase does not equal one of our cases.
+
+4.
+Nice work! switch statements can make your code easier to read and easier for others to understand.
+
