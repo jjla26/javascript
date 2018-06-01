@@ -14,7 +14,7 @@ function takeOrder(topping){
 
 takeOrder('bacon');
 
-//Exercise
+//Exercise 3
 
 function takeOrder(topping, crustType){
   console.log('Order:' + crustType + ' pizza topped with ' + topping)
@@ -23,3 +23,51 @@ function takeOrder(topping, crustType){
 takeOrder('bacon', 'thin crust');
 takeOrder('corn', 'wide crust');
 takeOrder('salame', 'Thin crust');
+
+// Exercise 4
+
+var orderCount = 0;
+
+function takeOrder(topping, crustType){
+  orderCount++;
+  console.log('Order:' + crustType + ' pizza topped with ' + topping)
+}
+
+function getSubTotal(itemCount){
+  return itemCount*7.5;
+}
+
+takeOrder('bacon', 'thin crust');
+takeOrder('corn', 'wide crust');
+takeOrder('salame', 'Rhin crust');
+
+console.log(getSubTotal(orderCount));
+
+// Exercise 6 
+var orderCount = 0;
+
+function takeOrder(topping, crustType){
+  orderCount++;
+  console.log('Order:' + crustType + ' pizza topped with ' + topping)
+}
+
+function getSubTotal(itemCount){
+  return itemCount*7.5;
+}
+
+function getTax(){
+  return getSubTotal(orderCount)*0.06;
+  
+}
+
+function getTotal(){
+	return getTax()+getSubTotal(orderCount);  
+}
+
+takeOrder('bacon', 'thin crust');
+takeOrder('corn', 'wide crust');
+takeOrder('salame', 'Rhin crust');
+
+console.log(getSubTotal(orderCount));
+
+console.log(getTotal());
