@@ -87,4 +87,29 @@ Find the .length of your bucketList array and log it to the console.
 Fun fact: .length is also a property for strings.
 
 For instance, you can write 'Hello World'.length, and it will output 11 (the number of characters in "Hello World").
+ 
+# push Method
+JavaScript has a surprise for us: it has built in functions for arrays that help us do common tasks! Let's learn two of them.
+
+First, push() allows us to add items to the end of an array. Here is an example of how this is used:
+
+var bucketList = ['item 0', 'item 1', 'item 2'];
+
+bucketList.push('item 3', 'item 4');
+The method push() would make the bucketList array look like:
+
+['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+Check out how push() works here:
+
+It connects to bucketList with a period.
+
+Then we call it like a function. That's because push() is a function and one that JavaScript allows us to use right on an array.
+
+Connecting a function like this is common in JavaScript. Think: we've been connecting .log to console this whole time!
+
+1.
+Add two more items to your bucketList array using push.
+
+2.
+Now, use console.log to print your bucketList array to make sure your items were added.
 
