@@ -100,3 +100,94 @@ Since JavaScript starts from 0, make the start condition the length of the vacat
 
 3.
 Nice work! Remember, all for loops have three conditions, start, stop, and iterate, and we can edit all three!
+
+## for loops inside of for loops
+Let's say that you and a friend would like to go on vacation together. You've both made arrays of your favorite places and you want to compare to see if any places match. This is a job for loops!
+
+The big idea is that we can run a for loop inside another for loop to compare the items in two arrays.
+
+Every time the outter for loop runs once, the inner for loop will run completely.
+
+With two for loops, we can check to see if any of the your vacation spots match your friend's spots.
+
+1.
+We are going to write this program from scratch. Start out by writing an variable named myPlaces and set it equal to an array with three places you'd like to visit.
+
+2.
+Now, make another variable named friendPlaces and set it equal to an array with three places a friend might like to go.
+
+Make sure that at least one of the places is the same as in your myPlaces array.
+
+3.
+Write a for loop that iterates through each item in myPlaces and logs out each place.
+
+
+4.
+You logged all of your places!
+
+Now, inside of the existing for loop's block, write another for loop that loops over friendPlaces. This time, instead of using the i as the variable name, use j, so we don't overwrite any variables.
+
+
+5.
+Look what printed to the console. Your first place printed, then all three of your friend's. Then your second place, then your friend's places again. And then one more time.
+
+This is because the inner for loop runs completely every time the outer for loop runs once. Click 'Run' one more time to proceed.
+
+6.
+The purpose of the program is to see what you and your friend have in common. Let's utilize the === comparison with an if/else statement.
+
+Inside the second for loop's block, write an if/else statement that checks if myPlaces[i] is equal to friendPlaces[j]. If it is, log to the console the place you have in common.
+
+
+## while Loops
+Awesome job! for loops are great, but they have a limitation: you have to know how many times you want the loop to run. What if you want a loop to run an unknown or variable number of times instead?
+
+For example, if we have a deck of cards and we want to flip cards (loop a card flipping function) until we get a 'Spade', how could we write that in JavaScript?
+
+That's the purpose of the while loop. It looks like similar to a for loop. Check it out:
+
+while (condition) {
+  // code block that loops until condition is false
+}
+The loop begins with the keyword while
+
+Inside the parentheses, we can insert a condition. As long as the variable evaluates to true the block of code will loop.
+
+Inside the code block we can write any code we'd like to loop.
+
+1.
+Let's write a program that flips cards until we get a 'Spade.' Start by creating a variable named cards and set it equal to this array:
+
+['Diamond', 'Spade', 'Heart', 'Club']
+2.
+Right under the array create a variable named currentCard and set it equal to 'Heart'.
+
+This variable will hold the name of the card we just flipped. We are using 'Heart' as the first card.
+
+3.
+Let's utilize a while loop to do two things:
+
+If the currentCard is not a 'Spade', then add a console.log to print the value of currentCard.
+Then, create a random number between 0 and 3 and put it in a variable named randomNumber.
+Then use the randomNumber to reassign currentCard to a new card from the cards array.
+The while loop could like this:
+
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  currentCard = cards[randomNumber];
+}
+4.
+Outside the while loop, on the last line of the program, use console.log to log that the program found a spade.
+
+Run the code a few times to see the output changing. You can see the while loop guessing a card, then seeing if it is a Spade, over and over, until it finds one.
+
+## Review Loops
+Great job! In this unit we learned how to write less repetitive code with loops.
+
+for loops allow us to repeat a block of code a known amount of times.
+We can use a for loop inside another for loop to compare two lists.
+while loops are for looping over a code block an unknown amount of times.
+At this point, you've learned the foundational concepts of JavaScript. Now we are going to apply them to the web with a JavaScript library called jQuery.
