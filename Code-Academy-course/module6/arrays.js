@@ -45,3 +45,25 @@ console.log('Hello World'.length);
 bucketList.push('TV','Stereo');
 
 console.log(bucketList);
+
+// Exercise 5
+
+var bucketList = ['laptop','celphone', 'tablet'];
+
+console.log(bucketList);
+
+var listItem = bucketList[3];
+
+console.log(listItem);
+
+console.log(bucketList.length);
+
+console.log('Hello World'.length);
+
+bucketList.push('TV','Stereo');
+
+console.log(bucketList);
+
+bucketList.pop(bucketList);
+
+console.log(bucketList);

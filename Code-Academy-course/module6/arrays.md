@@ -113,3 +113,33 @@ Add two more items to your bucketList array using push.
 2.
 Now, use console.log to print your bucketList array to make sure your items were added.
 
+## pop Method
+Now that we can push() items into an array, let's pop one off, using pop().
+
+pop() is similar to push(), except that it deletes the last item of an array. Here's an example:
+
+var bucketList = ['item 0', 'item 1', 'item 2'];
+
+bucketList.pop();
+
+console.log(bucketList); 
+// Output: [ 'item 0', 'item 1' ]
+Notice that 'item 2' was deleted from the end.
+
+1.
+Use the pop method to delete the last element from your array.
+
+2.
+Log bucketList to the console to make sure it worked.
+
+3.
+push and pop are just two of many methods we have for arrays. You can learn more array methods here.
+
+## Review Arrays
+Nice work! In this lesson, we learned these concepts regarding arrays:
+
+Arrays are lists and are a way to store data in JavaScript. Each item inside of an array is at a numbered position. Arrays are created with brackets [].
+We can access one item in an array using it's numbered position, with syntax like: myArray[0].
+Arrays have a length property, which allows you to see how many items are in an array.
+Arrays also have their own methods, including push and pop, which add and subtract items from an array, respectively.
+In the next lesson we'll learn how to loop over our arrays, which can bring our lists to life!
