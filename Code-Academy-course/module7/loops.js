@@ -67,3 +67,4 @@ while (currentCard !== 'Spade') {
 }
 
 console.log('Found a Spade!');
+
